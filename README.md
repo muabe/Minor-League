@@ -1,5 +1,5 @@
 # Minor-League
-Individual Projects - 개인 프로젝트<br><br>
+Individual Projects - 개인 프로젝트<br>
 
 ### Do not clone!! <br>
 
