@@ -1,0 +1,3 @@
+include ':app'
+include ':uni'
+project (':uni').projectDir = new File('../Uni/uni')
