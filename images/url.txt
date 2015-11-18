@@ -1,0 +1,11 @@
+크기 360x640
+
+Propose 교육
+https://raw.githubusercontent.com/JaeWoongOh/jaewoongoh.github.com/master/gist/images/edu/
+
+Propose 이미지
+https://raw.githubusercontent.com/JaeWoongOh/jaewoongoh.github.com/master/gist/images/propose/
+
+
+기타 이미지
+https://raw.githubusercontent.com/JaeWoongOh/jaewoongoh.github.com/master/gist/images/etc/
