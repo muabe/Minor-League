@@ -14,7 +14,9 @@ dependencies {
 }
 
 ```
+
 <br>
+
 ## AndroidManifest 설정
 - 퍼미션
 ```xml
@@ -25,7 +27,9 @@ dependencies {
 <uses-permission android:name= "android.permission.GET_ACCOUNTS"/>
 <uses-permission android:name= "android.permission.READ_PHONE_STATE"/>
 ```
+
 <br>
+
 - Activity
 ```xml
 <application>
@@ -47,7 +51,9 @@ dependencies {
   
 <application>  
 ```
+
 <br>
+
 ## SDK실행
 ```java
 Intent intent = new Intent(MainActivity.this, GenieActivity.class);
