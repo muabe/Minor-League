@@ -1,12 +1,48 @@
-# Minor-League
-Individual Projects - 개인 프로젝트<br>
+# GenieWorks SDK
 
-### Do not clone!! <br>
+## Build 설정
+gradle.bulid 파일에 아래와 같이 repository와 dependency를 지정합니다.
+```
+repositories{
+    flatDir {
+        dirs 'libs'
+    }
+}
 
-여러가지 테스트 프로젝트를 모아 두는 곳으로써<br>
-패턴과 라이브러리로 만들어가는 과정을 거칠 프로젝트들의 저장소
+dependencies {
+    implementation 'net.genieworks.sdk:genie-sdk@aar'
+}
 
-https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.xml#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fmuabe%2FMinor-League%2Fmaster%2FUntitled%2520Diagram.xml
+```
 
+## AndroidManifest 설정
+- 퍼미션
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name= "android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name= "android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name= "android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name= "android.permission.GET_ACCOUNTS"/>
+<uses-permission android:name= "android.permission.READ_PHONE_STATE"/>
+- Activity
+```xml
+<application>
 
+  <meta-data
+      android:name="partner_id"
+      android:value="01647-20180412-390" />
+  <meta-data
+      android:name="title_bar_color"
+      android:value="default" />
+  
+  <activity android:name="net.genieworks.sdk.GenieActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+  </activity>
+  <activity
+      android:name="net.genieworks.sdk.GenieDetailActivity"
+      android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+  </activity>
+  
+<application>  
+```
 
