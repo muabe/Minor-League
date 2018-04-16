@@ -1,4 +1,5 @@
 # GenieWorks SDK
+lib 폴더 안에 genie-sdk.aar파일을 복사하여 넣습니다.
 
 ## Build 설정
 gradle.bulid 파일에 아래와 같이 repository와 dependency를 지정합니다.
