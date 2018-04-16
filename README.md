@@ -24,9 +24,10 @@ dependencies {
 <uses-permission android:name= "android.permission.WRITE_EXTERNAL_STORAGE"/>
 <uses-permission android:name= "android.permission.GET_ACCOUNTS"/>
 <uses-permission android:name= "android.permission.READ_PHONE_STATE"/>
-```xml
+```
 
 - Activity
+```xml
 <application>
 
   <meta-data
