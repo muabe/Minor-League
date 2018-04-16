@@ -48,3 +48,9 @@ dependencies {
 <application>  
 ```
 
+## SDK실행
+```java
+Intent intent = new Intent(MainActivity.this, GenieActivity.class);
+intent.putExtra(GenieActivity.ARG_CUST_ID, custId);
+startActivity(intent);
+```
