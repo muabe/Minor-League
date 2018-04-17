@@ -2,7 +2,7 @@
 GenieWorks에서 제공하는 genie-sdk.aar파일을 lib 폴더 안에  복사하여 넣습니다.<br>
 GenieSDK를 사용하기 위해선 Build설정과 AndroidManifest 설정이 필요합니다.<br>
 > **Note** <br>
-최신버전인 android studio 3.1.1과 gradle4.4 기준으로 작성 되었습니다. <br>
+현시점 최신버전인 android studio 3.1.1과 gradle4.4 기준으로 작성 되었습니다. <br>
 
 ## Build 설정
 genie-sdk.aar파일을 프로젝트에 import하기 위한 build 설정입니다.<br>
