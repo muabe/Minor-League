@@ -1,10 +1,15 @@
 # GenieWorks SDK
-lib 폴더 안에 genie-sdk.aar파일을 복사하여 넣습니다.
+GenieWorks에서 제공하는 genie-sdk.aar파일을 lib 폴더 안에  복사하여 넣습니다.<br>
+GenieSDK를 사용하기 위해선 Build설정과 AndroidManifest 설정이 필요합니다.<br>
+> **Note** <br>
+최신버전인 android studio 3.1.1과 gradle4.4 기준으로 작성 되었습니다.
 
 ## Build 설정
-gradle.bulid 파일에 아래와 같이 repository와 dependency를 지정합니다.
+genie-sdk.aar파일을 프로젝트에 import하기 위한 build 설정입니다.<br>
+gradle.bulid 파일에 아래와 같이 repository와 dependency를 지정합니다.   
+
 ```
-repositories{
+repositories{	
     flatDir {
         dirs 'libs'
     }
@@ -16,10 +21,13 @@ dependencies {
 
 ```
 
+
 <br>
 
 ## AndroidManifest 설정
-- 퍼미션
+GenieSDK는 다음과 같은 권한이 필요 합니다.<br>
+AndroidManifest 파일에 uses-permission를 설정해 줍니다.
+- Permission
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name= "android.permission.ACCESS_NETWORK_STATE"/>
@@ -32,6 +40,8 @@ dependencies {
 <br>
 
 - Activity
+GenieSDK에서 제공하는 2개의 Activity와 meta-data 정보를<br>
+application 태그 아래 선언해 줍니다.
 ```xml
 <application>
 
@@ -55,7 +65,8 @@ dependencies {
 
 <br>
 
-## SDK실행
+## Sample Code
+ 아래와 같이 5개의 파미라터를 intent에 전달하고 startActivity 실행합니다.
 ```java
 String accessToken = "삼성에게 전달 받은 값";
 String serviceId = "삼성에게 전달 받은 값";
