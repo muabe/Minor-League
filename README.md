@@ -29,7 +29,9 @@ dependencies {
 ## AndroidManifest 설정
 GenieSDK는 다음과 같은 권한이 필요 합니다.<br>
 AndroidManifest 파일에 uses-permission를 설정해 줍니다.
+
 - Permission
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name= "android.permission.ACCESS_NETWORK_STATE"/>
@@ -41,9 +43,11 @@ AndroidManifest 파일에 uses-permission를 설정해 줍니다.
 
 <br>
 
-- Activity
+- Activity 
+
 GenieSDK에서 제공하는 2개의 Activity와 meta-data 정보를<br>
 application 태그 아래 선언해 줍니다.
+
 ```xml
 <application>
 
