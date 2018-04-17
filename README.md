@@ -27,7 +27,7 @@ dependencies {
 <br>
 
 ## AndroidManifest 설정
-- Permission<br>
+- **Permission**<br>
 GenieSDK는 다음과 같은 권한이 필요 합니다.<br>
 AndroidManifest 파일에 uses-permission를 설정해 줍니다.
 
@@ -42,8 +42,7 @@ AndroidManifest 파일에 uses-permission를 설정해 줍니다.
 
 <br>
 
-- Activity 
-
+- **Activity**<br>
 GenieSDK에서 제공하는 2개의 Activity와 meta-data 정보를<br>
 application 태그 아래 선언해 줍니다.
 
