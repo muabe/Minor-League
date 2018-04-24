@@ -18,7 +18,7 @@ repositories{
 }
 
 dependencies {
-    implementation 'net.genieworks.sdk:genie-sdk@aar'
+    compile 'net.genieworks.sdk:genie-sdk@aar'
 }
 
 ```
