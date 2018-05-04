@@ -21,25 +21,37 @@ public class Lib extends AbstractProcessor {
         Iterator<? extends  TypeElement> iter = annotations.iterator();
         while (iter.hasNext()){
             TypeElement el = iter.next();
-            System.out.println("------------------------------------------------");
-            System.out.println("SimpleName:"+el.getSimpleName());
-            System.out.println("NestingKind:"+el.getNestingKind().toString());
-            System.out.println("QualifiedName:"+el.getQualifiedName());
-            System.out.println("EnclosedElements Size:"+el.getEnclosedElements().size());
-            System.out.println("EnclosingElement:"+el.getEnclosingElement().toString());
-            System.out.println("TypeParameters Size:"+el.getTypeParameters().size());
-            System.out.println("Interfaces Size:"+el.getInterfaces().size());
-            System.out.println("getKind toString :"+el.getKind().toString());
+           
         }
 
-		for (TypeElement typeElement : annotations) {
 
+        for (TypeElement typeElement : annotations) {
             for (Element element : roundEnv.getElementsAnnotatedWith(typeElement)) {
+                Tester tester = element.getAnnotation(Tester.class);
+                System.out.println("------------------------------------------------");
+                if (tester != null) {
+					System.out.println("isClass:"+typeElement.getKind().isClass());
+                    System.out.println("isField:"+typeElement.getKind().isField());
+                    System.out.println("isInterface:"+typeElement.getKind().isInterface());
 
-                Override override = element.getAnnotation(Override.class);
-
-                if (override != null) {
-                    System.out.println("@Override at " + element);
+                    System.out.println("SimpleName:"+typeElement.getSimpleName());
+                    System.out.println("NestingKind:"+typeElement.getNestingKind().toString());
+                    System.out.println("QualifiedName:"+typeElement.getQualifiedName());
+                    System.out.println("EnclosedElements Size:"+typeElement.getEnclosedElements().size());
+                    System.out.println("EnclosingElement:"+typeElement.getEnclosingElement().toString());
+                    System.out.println("TypeParameters Size:"+typeElement.getTypeParameters().size());
+                    System.out.println("Interfaces Size:"+typeElement.getInterfaces().size());
+                    System.out.println("getKind toString :"+typeElement.getKind().toString());
+                    System.out.println("**************************************************");
+                    System.out.println("ÇÔ¼ö¸í:" + element);
+                    System.out.println("SimpleName:"+element.getSimpleName());
+                    System.out.println("getKind:"+element.getKind().toString());
+                    System.out.println("asType:"+element.asType().toString());
+                    System.out.println("getAnnotationMirrors:"+element.getAnnotationMirrors().get(0).getAnnotationType());
+                    System.out.println("getEnclosedElements size:"+element.getEnclosedElements().size());
+                    System.out.println("getEnclosingElement:"+element.getEnclosingElement().toString());
+                }else{
+                    System.out.println("Tester Null!!!");
                 }
             }
         }

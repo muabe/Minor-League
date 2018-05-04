@@ -10,10 +10,12 @@ class Hoge {
 
     }
 
+	@Tester	
     @Override
     public String toString(){
         return "toString ¿Ã¥Ÿ";
     }
+
 
 	public void ok(){
 	}
