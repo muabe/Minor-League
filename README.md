@@ -77,8 +77,10 @@ String serviceId = "삼성에게 전달 받은 값";
 String guidHash = "삼성에게 전달 받은 값";
 String didHash = "삼성에게 전달 받은 값";
 String adid = "삼성에게 전달 받은 값 (파라미터 이름은 바뀔 수 있음)";
+String host = "stg Url 주소"
 
 Intent intent = new Intent(MainActivity.this, GenieActivity.class);
+intent.putExtra("host",host);
 intent.putExtra("accessToken",accessToken);
 intent.putExtra("serviceId",serviceId);
 intent.putExtra("guidHash",guidHash);
