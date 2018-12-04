@@ -48,22 +48,32 @@ application 태그 아래 선언해 줍니다.
 
 ```xml
 <application>
+        <meta-data
+            android:name="partner_id"
+            android:value="01647-20180412-390" />
+        <meta-data
+            android:name="title_bar_color"
+            android:value="default" />
 
-  <meta-data
-      android:name="partner_id"
-      android:value="01647-20180412-390" />
-  <meta-data
-      android:name="title_bar_color"
-      android:value="default" />
-  
-  <activity android:name="net.genieworks.sdk.GenieActivity"
+        <activity android:name="net.genieworks.sdk.GenieActivity"
+                  android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+
+        </activity>
+
+        <activity
+            android:name="net.genieworks.sdk.GenieDetailActivity"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar">
-  </activity>
-  <activity
-      android:name="net.genieworks.sdk.GenieDetailActivity"
-      android:theme="@android:style/Theme.Holo.Light.NoActionBar">
-  </activity>
-  
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="banner"
+                    android:scheme="geniesdk" />
+            </intent-filter>
+        </activity>
 <application>  
 ```
 
