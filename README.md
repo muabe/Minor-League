@@ -98,3 +98,23 @@ intent.putExtra("didHash",didHash);
 intent.putExtra("adid",adid);
 startActivity(intent);
 ```
+## 배너(URI방식) Sample Code
+```java
+String accessToken = "삼성에게 전달 받은 값";
+String serviceId = "삼성에게 전달 받은 값";
+String guidHash = "삼성에게 전달 받은 값";
+String didHash = "삼성에게 전달 받은 값";
+String adid = "삼성에게 전달 받은 값 (파라미터 이름은 바뀔 수 있음)";
+
+String ad_no = "11512";
+
+String url ="geniesdk://banner?ad_no="+ad_no;
+url += "&accessToken="+accessToken;
+url += "&serviceId="+serviceId;
+url += "&&guidHash="+guidHash;
+url += "&didHash="+didHash;
+url += "&token="+token;
+
+Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+startActivity(intent);
+```
