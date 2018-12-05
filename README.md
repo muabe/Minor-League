@@ -97,6 +97,7 @@ intent.putExtra("adid",adid);
 startActivity(intent);
 ```
 ## 배너(URI방식) Sample Code
+ 지니웍스에서 광고에 대한 URL을 제공하며 사용자의 로그인 정보를 URL 파라미터 방식으로 추가해야 합니다.
 ```java
 String accessToken = "삼성에게 전달 받은 값";
 String serviceId = "삼성에게 전달 받은 값";
@@ -107,7 +108,7 @@ String didHash = "삼성에게 전달 받은 값";
 //지니웍스에서 제공하는 URL
 String url ="geniesdk://banner?ad_no=11512";
 
-//추가정보 파라미터 설정
+//로그인 정보 파라미터 설정
 url += "&accessToken="+accessToken;
 url += "&serviceId="+serviceId;
 url += "&&guidHash="+guidHash;
