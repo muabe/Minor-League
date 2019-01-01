@@ -1,2 +1,25 @@
 <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 -->
+
 <uses-permission android:name="android.permission.VIBRATE" />  <!-- 진동 -->
+
+<uses-permission android:name="android.permission.BLUETOOTH"/> <!-- 블루투스 -->
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/> <!-- 블루투스 -->
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/> <!-- 위치찾기 -->
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- 위치찾기 -->
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 파일 쓰기-->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 파일 읽기-->
+
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 네트워크 상태 -->
+
+<uses-permission android:name="com.android.alarm.permission.SET_ALARM" /> <!-- 알람 -->
+
+<uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 전화걸기 -->
+<uses-permission android:name="android.permission.SEND_SMS" /> <!-- 문자 보내기 -->
+<uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- 문자 받기 캐치 -->
+
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.PREVENT_POWER_KEY"/>
+
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/> <!-- 시스템 팝업 알림창 -->
