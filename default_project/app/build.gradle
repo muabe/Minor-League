@@ -1,0 +1,9 @@
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation project(':uni')
+    implementation project(':uniboot')
+    implementation project(':propose')
+}
