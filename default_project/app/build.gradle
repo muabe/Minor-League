@@ -3,6 +3,7 @@ repositories {
 }
 
 dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':uni')
     implementation project(':uniboot')
     implementation project(':propose')

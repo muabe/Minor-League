@@ -6,3 +6,4 @@
 /build
 /captures
 docs/
+.externalNativeBuild

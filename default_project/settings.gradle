@@ -1,4 +1,3 @@
-include ':propose', ':sample'
 include ':uni'
 include ':uniboot'
 project(':uni').projectDir = new File('../Uni/uni')
