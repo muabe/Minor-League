@@ -9,10 +9,10 @@
 <br>
 
 ### 데이터 송수신 시 Data Type 및 Content-Type
- - 데이터 보낼 때
+ - 데이터 보낼 때 <br>
   JSON : application/json;charset=UTF-8
 
- - 데이터 받을 때
+ - 데이터 받을 때 <br>
   JSON : application/json;charset=UTF-8 <br>
   Form : application/x-www-form-urlencoded;charset=UTF-8 <br>
   File : multipart/formed-data <br>
