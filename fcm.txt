@@ -24,7 +24,7 @@ Fcm 메세지 유형 3가지
   "message":{
     "token":"bk3RNwTe3H0:CI2k_HHwgIpoDKCIZvvDMExUdFQ3P1...",
     "data":{
-      "Nick" : "Mario",
+      "title" : "Mario",
       "body" : "great match!",
       "Room" : "PortugalVSDenmark"
     }
