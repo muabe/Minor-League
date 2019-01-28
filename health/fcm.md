@@ -15,9 +15,8 @@ firebase cloud message를 기반으로 push 메세지에 관련해여 알아야�
    -  iOS에서는 didReceiveRemoteNotification:
    -  자바스크립트에서는 onMessage()  
 >  note 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
-
-
 <br>
+
 sample json
 ```json
 {
