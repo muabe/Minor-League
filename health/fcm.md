@@ -9,10 +9,10 @@ firebase cloud message를 기반으로 push 메세지에 관련해여 알아야�
  - 기기에서 자동으로 노티등 알림을 처리
  - 서버에서 직접 노티, 사운드 등 직적 지정함
  - 앱이 떠 있을땐 OS별로 각각 아래를 호출함
- - - android onMessageReceived()
- - -  iOS에서는 didReceiveRemoteNotification:
- - -  자바스크립트에서는 onMessage()  
-   >  note 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
+   - android onMessageReceived()
+   -  iOS에서는 didReceiveRemoteNotification:
+   -  자바스크립트에서는 onMessage()  
+>  note 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
 
 sample json
 ```json
