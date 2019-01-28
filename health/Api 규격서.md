@@ -65,16 +65,13 @@ Status는 업무 로직상 결과에 대한 정보입니다.<br>
 contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 
 ```
-{
- "status" : {  
-       "timestamp":"2019-01-14 11:23:17",
-       "status":200,
-       "error":"",
-       "message":"",
-       "trace":"",
-       "path":"/api/v1/lotto2222222222222",
-   }
-   
+{ 
+   "timestamp":"2019-01-14 11:23:17",
+   "status":200,
+   "error":"",
+   "message":"",
+   "trace":"",
+   "path":"/api/v1/lotto2222222222222",  
    "contents" : {
      "User" : {
         "name" : "오재웅"
