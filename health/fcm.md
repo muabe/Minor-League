@@ -14,7 +14,7 @@ firebase cloud message를 기반으로 push 메세지에 관련해여 알아야�
    - android onMessageReceived()
    -  iOS에서는 didReceiveRemoteNotification:
    -  자바스크립트에서는 onMessage()  
->  note 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
+>  NOTE 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
 <br>
 
 sample json
@@ -29,8 +29,8 @@ sample json
   }
 }
 ```
-
 <br>
+
 ### 2. 데이터 메세지 : 클라이언트 앱에서 처리
  - 개발자가 직접 처리하고 키-값 형태
  - Data에 키-값을 넣어서 커스텀하게 처리
@@ -74,6 +74,7 @@ sample json
 ```
 <br>
 <br>
+
 ## FCM 키 유형 2가지
 Fcm 데이터 키를 선정하는데 있어서 공통키와 커스텀키가 있습니다.<br>
 이는 서버에서 내려주는 JOSN 포멧을 실제 FCM에서는 플랫폼마다 다르기 내려주기 때문입니다.<br>
@@ -88,8 +89,8 @@ Fcm 데이터 키를 선정하는데 있어서 공통키와 커스텀키가 있�
 <br>
 ## 2. 플랫폼별 키(커스텀 키) : 공통 이외의 데이터나 플랫폼별 따로 데이터를 달리줘야할 때
  - IOS를 제외해고 보내야 한다던지 할때
-
 <br>
+
 sample json
 ```json 
 {
@@ -123,28 +124,29 @@ sample json
    }
  }
 ```
-
 <br>
+<br>
+
 ## 전송 옵션 2가지
  모바일은 PC환경과 달리 예측하기 힘든 상황들이 있습니다.(엘레베이터, 베터리부족 등등)<br>
  디바이스가 메세지를 받을수 없는 상황일때(폰이 꺼진상태 등)<br>
  FCM에서 메세지를 누적하고 있다가 받을수 있는 상황으로 되었을때 처리하는 방법은 아래와 같습니다.<br>
- > NOTE FCM은 전송 순서를보장하지 않는다.
-
+ > NOTE FCM은 전송 순서를보장하지 않는다. 따리서 아래와같이 축소형/비축소형 메세지를 적절히 활용해야 한다.
 <br>
+
 ### 1.비축소형 메시지
   - 안드로이드의 경우 100개까지 fcm에서 저장하고 있으며 100개가 넘으면 삭제
   - 삭제되면 특수한 메세지를 보냄
   - 특수한 메세지를 받았을때 서버에 조회를 해서 데이터를 동기화하는 로직을 추가해야함
-
 <br>
+
 ### 2.축소형 메시지
  - 마지막에 오는 하나만 보내주기
  - collapse_key 라는 키를 설정해야하며 같은 키일경우 덮어씀 
  - 총 4개를 서로다른 키로 최신화를 할수 있음
  - 4개가 넘어버리면 어떤것이 지워질지 보장하지 않음
-
 <br>
+
 ### 메시지 우선순위 설정
 메세지 우선순위는 priority로 설정이 가능하며 default는 아래와 같습니다.
  - 보통 우선순위
