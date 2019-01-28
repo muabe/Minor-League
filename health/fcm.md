@@ -106,7 +106,7 @@ sample json
      },
      "android":{
        "ttl":"86400s",
-       "notification"{
+       "notification":{
          "click_action":"OPEN_ACTIVITY_1"
        }
      },
