@@ -3,7 +3,9 @@ push메세지는 서버, 모바일 두 분야에서 개발이 이루어지는 �
 잘되던 push 메세지가 시간이 지나면 오지않는 경우,  android와 iso 둘중 하나만 간다던지 하는일을 겪에 되는데<br>
 이런일은 개발자들이 FCM에 대한 이해가 부족하기 때문입니다.<br>
 firebase cloud message를 기반으로 push 메세지에 관련해여 알아야할 기본적인 사항들에 대해 정리해 보았습니다.<br>
+
 <br>
+
 ## Fcm 메세지 유형 3가지
 ### 1. 알림 메세지 : SDK(OS)에서 자동 처리됨
  - 기기에서 자동으로 노티등 알림을 처리
@@ -14,7 +16,8 @@ firebase cloud message를 기반으로 push 메세지에 관련해여 알아야�
    -  자바스크립트에서는 onMessage()  
 >  note 프로토컬 종류<br> https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages?hl=ko#Notification
 
-<br>
+
+
 sample json
 ```json
 {
