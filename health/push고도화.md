@@ -1,10 +1,11 @@
 # Push Message 고도화
-푸시 알림은 SMS와 달리 앱에서 사용 가능한 특수한 기능을 연결 해준다.
-푸시는 특성화된 기능을 활용한 사용자 리텐션을 올릴수 있는 방법중 하나이다.
+푸시 알림은 SMS와 달리 앱에서 사용 가능한 특수한 기능을 연결 해준다. <br>
+푸시는 특성화된 기능을 활용한 사용자 리텐션을 올릴수 있는 방법중 하나이다. <br>
 하지만 유저를 고려하지 않는 푸시 메시지는, 스팸으로 취급될 뿐더러 서비스 이탈을 가속화시키기도 한다
 
 > Note <br>
-Push는 정보 기반의 행동에 목표를 두고 설계된 가장 포괄적인 모바일 마케팅 도구입니다. 플랫폼의 통합 솔루션은 메시지 전송과 인앱 경험을 아우르는 의미 있는 분석 결과를 제공해야 합니다.
+Push는 정보 기반의 행동에 목표를 두고 설계된 가장 포괄적인 모바일 마케팅 도구입니다.<br>
+플랫폼의 통합 솔루션은 메시지 전송과 인앱 경험을 아우르는 의미 있는 분석 결과를 제공해야 합니다.<br>
 
 <br><br>
 
@@ -32,7 +33,6 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
  ![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img4.png)
  
  - 비활성계정 복귀 유도
- - 거부감 없는 대화형 형태 
  - 유저 데이터 분석 
 
 | 종류 | 예시 |
@@ -44,4 +44,13 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
 - push이후 사용자 리텐션 분석
 ![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img2.png)
 
-![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img3.png) 
+![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img3.png)
+
+<br><br>
+
+### 벤치마킹
+ - 알람 형태의 push 메세지
+ - 암림 메세지를 음성으로
+ - 식단 레시피
+ - 병원에서 혈당 수첩/기록을 선호
+ - 챗봇 거부감 없는 대화형 메세지
