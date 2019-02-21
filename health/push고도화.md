@@ -26,7 +26,9 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
 - 사용자 분석을 통한 맞춤 타겟 알림
  ex) 유아용품 -> 유아를 양육하고 있는 여성을 타겟
 
- ### 사용자 참여 유도/이탈방지
+<br><br>
+
+### 사용자 참여 유도/이탈방지
  ![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img4.png)
  
  - 비활성계정 복귀 유도
