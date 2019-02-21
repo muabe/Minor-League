@@ -13,7 +13,7 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
 #### 마케팅 수신 동의
 - 앱 푸시 광고의 정보통신망법 적용 : 스팸 관련 정보통신망법 규정(제50조부터 제50조의8)’의 적용 대상
 - 회원가입시에만 받는것이 아닌 앱내에서 설정이 수시로 가능해야함
-![수신동의](https://github.com/muabe/Minor-League/health/image/push_img1.png) 
+![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img1.png) 
 
 #### 스팸이 아닌 정보
  불필요한 사람에게 알림이 가지 않게 하는것이 최우선
@@ -23,7 +23,7 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
  ### 사용자 참여 유도/이탈방지
  - 비활성계정 복귀 유도
  - 거부감 없는 대화형 형태 
- ![수신동의](https://github.com/muabe/Minor-League/health/image/push_img4.png)
+ ![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img4.png)
  
  - 유저 데이터 분석 
 
@@ -34,6 +34,6 @@ Push Message의 목적은 크게 마케팅/광고와  사용자 참여율을 높
 | 시기 맞춤화 - 앱을 실행할 가능성이 가장 높을 때 푸시 알림 | 출퇴근 시간 등 |
 
 - push이후 사용자 리텐션 분석
-![수신동의](https://github.com/muabe/Minor-League/health/image/push_img2.png)
+![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img2.png)
 
-![수신동의](https://github.com/muabe/Minor-League/health/image/push_img3.png) 
+![수신동의](https://github.com/muabe/Minor-League/blob/master/health/image/push_img3.png) 
