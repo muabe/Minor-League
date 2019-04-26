@@ -80,12 +80,13 @@ application 태그 아래 선언해 줍니다.
 <br>
 
 ## Sample Code
- 아래와 같이 5개의 파미라터를 intent에 전달하고 startActivity 실행합니다.
+ 아래와 같이 6개의 파미라터를 intent에 전달하고 startActivity 실행합니다.
 ```java
 String accessToken = "삼성에게 전달 받은 값";
 String serviceId = "삼성에게 전달 받은 값";
 String guidHash = "삼성에게 전달 받은 값";
 String didHash = "삼성에게 전달 받은 값";
+String custom = "커스텀 파라미터";
 
 Intent intent = new Intent(MainActivity.this, GenieActivity.class);
 intent.putExtra("host",host);
@@ -94,6 +95,7 @@ intent.putExtra("serviceId",serviceId);
 intent.putExtra("guidHash",guidHash);
 intent.putExtra("didHash",didHash);
 intent.putExtra("adid",adid);
+intent.putExtra("custom",custom);
 startActivity(intent);
 ```
 ## 배너(URI방식) Sample Code
@@ -103,6 +105,7 @@ String accessToken = "삼성에게 전달 받은 값";
 String serviceId = "삼성에게 전달 받은 값";
 String guidHash = "삼성에게 전달 받은 값";
 String didHash = "삼성에게 전달 받은 값";
+String custom = "커스텀 파라미터";
 
 
 //지니웍스에서 제공하는 URL
@@ -113,6 +116,7 @@ url += "&accessToken="+accessToken;
 url += "&serviceId="+serviceId;
 url += "&&guidHash="+guidHash;
 url += "&didHash="+didHash;
+url += "&custom="+custom;
 
 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
 startActivity(intent);
