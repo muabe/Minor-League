@@ -3,30 +3,25 @@
 <html>
 <body>
  <h1>h2</h1>
- <script type="text/javascript">  
-    var Request = function() {  
-        this.getParameter = function(name) {  
-            var rtnval = '';  
-            var nowAddress = unescape(location.href);  
-            var parameters = (nowAddress.slice(nowAddress.indexOf('?') + 1,  
-                    nowAddress.length)).split('&');  
-            for (var i = 0; i < parameters.length; i++) {  
-                var varName = parameters[i].split('=')[0];  
-                if (varName.toUpperCase() == name.toUpperCase()) {  
-                    rtnval = parameters[i].split('=')[1];  
-                    break;  
-                }  
-            }  
-            return rtnval;  
-        }  
-    }  
-    var request = new Request();  
-</script>  
-  
-<script type="text/javscript>  
-    var paramValue = request.getParameter('link'); 
-    alert(paramvalue);
-</script> 
+$(function () {
+
+      var Result = fnGetParameterByName('link'); // 결과 : 111
+});
+ 
+
+
+//name이라는 이름을 가진 파라미터값 찾기
+function fnGetParameterByName(name) {
+    
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+
+ 
+ 
+
+        var result = results === null ? "G" : decodeURIComponent(results[1].replace(/\+/g, " "));
+} 
 
 </body>
 
