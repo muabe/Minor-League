@@ -3,13 +3,6 @@
 <html>
 <body>
  <h1>h2</h1>
-$(function () {
-
-      var Result = fnGetParameterByName('link'); // 결과 : 111
-});
- 
-
-
 //name이라는 이름을 가진 파라미터값 찾기
 function fnGetParameterByName(name) {
     
@@ -23,6 +16,8 @@ function fnGetParameterByName(name) {
         var result = results === null ? "G" : decodeURIComponent(results[1].replace(/\+/g, " "));
 } 
 
+ alert(fnGetParameterByName('link'));
+ 
 </body>
 
 
