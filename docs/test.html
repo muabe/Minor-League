@@ -12,9 +12,7 @@ var Request = function()
         var rtnval = '';
         var nowAddress = unescape(location.href);
         var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length));
-        alert(parameters);
-
-      
+         
             var varName = parameters.split('=')[0];
             if(varName.toUpperCase() == name.toUpperCase())
             {
@@ -23,7 +21,8 @@ var Request = function()
             }
        
         alert(rtnval);
-        //window.location.href=rtnval;
+        //location.replace(rtnval);
+        
     }
 }
 
@@ -33,6 +32,6 @@ request.getParameter();
 </script>
     </head>
     <body>
-        <h1>h</h1>
+        <h1>h7</h1>
     </body>
 </html>
