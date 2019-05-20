@@ -11,17 +11,16 @@ var Request = function()
         var name = 'link';
         var rtnval = '';
         var nowAddress = unescape(location.href);
-        var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length)).split('&');
+        var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length));
 
-        for(var i = 0 ; i < parameters.length ; i++)
-        {
-            var varName = parameters[i].split('=')[0];
+      
+            var varName = parameters.split('=')[0];
             if(varName.toUpperCase() == name.toUpperCase())
             {
-                rtnval = parameters[i].split('=')[1];
+                rtnval = parameters.split('=')[1];
                 break;
             }
-        }
+       
         alert(rtnval);
         //window.location.href=rtnval;
     }
