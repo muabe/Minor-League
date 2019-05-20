@@ -6,8 +6,9 @@
 
 var Request = function()
 {
-    this.getParameter = function( name )
+    this.getParameter = function()
     {
+        var name = 'link';
         var rtnval = '';
         var nowAddress = unescape(location.href);
         var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length)).split('&');
@@ -21,8 +22,7 @@ var Request = function()
                 break;
             }
         }
-//        return rtnval;
-        document.write( rtnval );
+        location.href=rtnval;
     }
 }
 
@@ -32,20 +32,6 @@ var request = new Request();
 </script>
     </head>
     <body>
-<form name='frm'>
-
-<script>request.getParameter('aaa');</script>
-<br>
-
-<script>request.getParameter('bbb');</script>
-<br>
-
-<script>request.getParameter('ccc');</script>
-<br>
-
-<script>request.getParameter('ddd');</script>
-<br>
-
-</form>
+        <h1>h5</h1>
     </body>
 </html>
