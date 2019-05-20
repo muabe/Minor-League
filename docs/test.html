@@ -12,6 +12,7 @@ var Request = function()
         var rtnval = '';
         var nowAddress = unescape(location.href);
         var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length));
+        alert(parameters);
 
       
             var varName = parameters.split('=')[0];
