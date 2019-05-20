@@ -1,30 +1,51 @@
-<!DOCTYPE HTML> 
-
 <html>
-<body>
- <h1>h2</h1>
+    <head>
+        <title>param2.html</title>
+<script>
+<!--
 
-</body>
+var Request = function()
+{
+    this.getParameter = function( name )
+    {
+        var rtnval = '';
+        var nowAddress = unescape(location.href);
+        var parameters = (nowAddress.slice(nowAddress.indexOf('?')+1,nowAddress.length)).split('&');
 
-<script language="javascript">
- $(function () {
+        for(var i = 0 ; i < parameters.length ; i++)
+        {
+            var varName = parameters[i].split('=')[0];
+            if(varName.toUpperCase() == name.toUpperCase())
+            {
+                rtnval = parameters[i].split('=')[1];
+                break;
+            }
+        }
+//        return rtnval;
+        document.write( rtnval );
+    }
+}
 
-      var Result = fnGetParameterByName('link'); // 결과 : 111
-      
-});
-//name이라는 이름을 가진 파라미터값 찾기
-function fnGetParameterByName(name) {
-    
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
+var request = new Request();
 
- 
- 
+//-->
+</script>
+    </head>
+    <body>
+<form name='frm'>
 
-        var result = results === null ? "G" : decodeURIComponent(results[1].replace(/\+/g, " "));
-} 
+<script>request.getParameter('aaa');</script>
+<br>
 
- 
-      </script>
+<script>request.getParameter('bbb');</script>
+<br>
+
+<script>request.getParameter('ccc');</script>
+<br>
+
+<script>request.getParameter('ddd');</script>
+<br>
+
+</form>
+    </body>
 </html>
