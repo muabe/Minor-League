@@ -14,7 +14,7 @@ Android Gradle 파일에 아래 코드를 추가하여 SDK Import할 수 있습�
 
 ## SDK 개발 가이드
 
-### SDK 객체 생성 및 초기화
+### 1.SDK 객체 생성 및 초기화
 ```java
 IsensSDK sdk = new IsensSDK(Context, IsensBleListener);
         sdk.enableAutoBluetooth(this); // 자동 블루투스 활성화 옵션
@@ -26,7 +26,7 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 
 <br>
 
-### 블루투스 디바이스 검색
+### 2.블루투스 디바이스 검색
 
 ```java
   sdk.startScan(timeout);
@@ -35,7 +35,8 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 
 <br>
 
-### 페어링이 필요한 경우 paring()으로 페어링 할수 있습니다.
+### 3.페어링
+페어링이 필요한 경우 paring()으로 페어링 할수 있습니다.
 ```java
   sdk.paring(BluetoothDevice);
 ```
@@ -43,7 +44,7 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 
 <br>
 
-### connection
+### 4.Connection
 ```java
   sdk.connect(BluetoothDevice);
 ```
@@ -51,7 +52,7 @@ connection이 성공하면 onConnected로 결과가 콜백 됩니다.
 
 <br>
 
-### 혈당 수치 리스트
+### 5.혈당 수치 리스트
 ```java
   sdk.getClucose(gatt, sequence);
 ```
