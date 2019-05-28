@@ -24,8 +24,8 @@ IsensSDK sdk = new IsensSDK(Context, IsensBleListener);
 IsensSDK 객체를 생성하고 regist()를 합니다.
 > Note : Activit의 onDestroy()에서 unreist()를 반드시 명시 해야합니다.
 
-
 <br>
+
 ### 블루투스 디바이스 검색
 
 ```java
