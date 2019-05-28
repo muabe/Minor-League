@@ -11,9 +11,11 @@ Android Gradle 파일에 아래 코드를 추가하여 SDK Import할 수 있습�
 ```
 
 <br>
+
 ## SDK 개발 가이드
 
 <br>
+
 ### SDK 객체 생성 및 초기화
 ```java
 IsensSDK sdk = new IsensSDK(Context, IsensBleListener);
@@ -40,6 +42,7 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 페이링이 성공하면 onBonded함수로 결과가 콜백 됩니다.
 
 <br>
+
 ### connection
 ```java
   sdk.connect(BluetoothDevice);
@@ -47,6 +50,7 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 connection이 성공하면 onConnected로 결과가 콜백 됩니다.
 
 <br>
+
 ### 혈당 수치 리스트
 ```java
   sdk.getClucose(gatt, sequence);
@@ -54,6 +58,7 @@ connection이 성공하면 onConnected로 결과가 콜백 됩니다.
 해당 결과는 onClucoseResult로 콜백 됩니다.
 
 <br>
+
 ### 예외 처리
 모든 에러는 onException으로 보내집니다<br>
 해당 내용은 Exception Messgae를 참조하시기 바랍니다.
