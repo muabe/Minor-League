@@ -22,6 +22,7 @@ IsensSDK sdk = new IsensSDK(Context, IsensBleListener);
         sdk.enableAutoBluetooth(this); // 자동 블루투스 활성화 옵션
         sdk.regist();
 ```
+
 IsensSDK 객체를 생성하고 regist()를 합니다.
 > Note : Activit의 onDestroy()에서 unreist()를 반드시 명시 해야합니다.
 
@@ -29,12 +30,14 @@ IsensSDK 객체를 생성하고 regist()를 합니다.
 <br>
 ### SDK 객체 생성 및 초기화
 블루투스 디바이스 검색
+
 ```java
   sdk.startScan(timeout);
 ```
 해당 결과는 onScanResult로 콜백 됩니다.
 
 <br>
+
 ### 페어링x페어링이 필요한 경우 paring()으로 페어링 할수 있습니다.
 ```java
   sdk.paring(BluetoothDevice);
