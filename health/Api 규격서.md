@@ -77,7 +77,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
    "timestamp":"2019-01-14 11:23:17",
    "status":200,
    "error":"",
-   "message":"",
+   "message":"SUCESS",
    "trace":"",
    "path":"/api/v1/lotto2222222222222",  
    "contents" : {
@@ -103,8 +103,8 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
    "timestamp":"2019-01-14 11:23:17",
    "status":200,
    "error":"",
-   "message":"",
-   "path":"/api/v1/lotto2222222222222"
+   "message":"SUCESS",
+   "path":"/api/v1/lotto2222222222222",
    "contents" : {
      "User" : {
         "name" : "오재웅", 
