@@ -32,7 +32,7 @@ API 호출 시 필요한 Header 정보입니다.
 ### 필수 Parameter 정보
  헤더 파라미터의 value는 형태는 대문자로 통일 한다.
  - channel : 추후 확장을 위한 업무 채널 ex) GLOBAL, B2B, B2C 
-   > Default : NOR
+   > Default : NORMAL
  - Accept-Language : 사용자 언어 설정(KO, EN, ZH)
    > Default : KO
  - api-version : 사용할 api version
