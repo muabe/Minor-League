@@ -30,11 +30,19 @@ API 호출 시 필요한 Header 정보입니다.
 ## Requst
 
 ### 필수 Parameter 정보
- - channel : 추후 확장을 위한 업무 채널 ex) Global, B2B, B2C
- - Accept-Language : 사용자 언어 설정(ko, en, zh)
+ 헤더 파라미터의 value는 형태는 대문자로 통일 한다.
+ - channel : 추후 확장을 위한 업무 채널 ex) GLOBAL, B2B, B2C 
+   > Default : NOR
+ - Accept-Language : 사용자 언어 설정(KO, EN, ZH)
+   > Default : KO
+ - api-version : 사용할 api version
+   > Default : 1.0
+ - os : ANDROID, IOS, WEB 등 OS/플랫폼
+   > Default : WEB
  
 ### 선택 Parameter 정보
  - userToken : 로그인 이후 API 호출 시 인증 정보로 사용함
+ - device-id : 단말키
 
 
 ## Response HTTP Status Codes
@@ -64,7 +72,7 @@ JSON 형태이며 Status와 contents로 구분합니다. <br>
 Status는 업무 로직상 결과에 대한 정보입니다.<br>
 contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 
-```
+```json
 { 
    "timestamp":"2019-01-14 11:23:17",
    "status":200,
@@ -90,7 +98,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 
 - 요청 성공에 대한 결과
 성공의 경우 추가로 contents 정보를 보내줍니다.
-```
+```json
 {  
    "timestamp":"2019-01-14 11:23:17",
    "status":200,
@@ -102,7 +110,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
  
  - 실패에 대한 결과   
  실패의 경우 contents정보를 넣지 않습니다.
-```
+```json
 {  
    "timestamp":"2019-01-14 11:23:17",
    "status":404,
@@ -119,7 +127,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
  유지보수와 확장성, 에러율을 최소화 하기위해 VO객체는 메이븐에 배포화여 앱과 공유합니다.
  
  - Json형태는 VO개체의 클래스 명과 동일
-```
+```json
 "contents" : {
      "User" : {
         "name" : "오재웅"
@@ -142,7 +150,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 - first 첫 페이지 여부
 - last 마지막 페이지 여부
 
-```
+```json
 "contents" : {
   {
     "Page" : {
