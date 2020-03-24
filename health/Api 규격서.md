@@ -82,7 +82,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
    "path":"/api/v1/lotto2222222222222",  
    "contents" : {
      "User" : {
-        "name" : "오재웅"
+        "name" : "오재웅", 
         "age" : 28
      }
  }
@@ -130,7 +130,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 ```json
 "contents" : {
      "User" : {
-        "name" : "오재웅"
+        "name" : "오재웅",
         "age" : 28
      }
    }
@@ -152,7 +152,6 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 
 ```json
 "contents" : {
-  {
     "Page" : {
                  "last" : true,
                  "totalElements" : 5,
@@ -160,10 +159,9 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
                  "size" : 20,
                  "number" : 0,
                  "numberOfElements" : 5,
-                 "first" : true
-                 "content" : [ ... ]
+                 "first" : true,
+                 "content" : [,,,, ]
     }
-  }
 }
 ```
 
