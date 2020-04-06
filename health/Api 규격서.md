@@ -54,16 +54,16 @@ Code	Status
 정상/데이터 리턴
 400 Bad Request
 
-단말 호출 에러
+사용자 인증 필요 시 인증 안된 경우
 401 Unauthorized
 
-사용자 인증 필요 시 인증 안된 경우
+단말 호출 에러
 404 Not found
 
 리소스가 없는 경우
 500 Internal Server Error
 
-> 그외 업무상 오류 코드는 200 이며 Body 영역에서 따로 처리함
+> 그외 업무상 오류 코드는 2000 이상 이며 Body 영역에서 따로 처리함
 
 <br><br>
 
@@ -88,6 +88,7 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
  }
 }
 ```
+
 ## Status 영역 정의
  timestamp : 응답 시간 <br>
  status : 서버에서 정의한 결과 코드 <br>
@@ -128,6 +129,20 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
 }
 ```
 
+ - 예외 응답 처리
+   비밀번호 미일치 같은 예외적인 결과를 보낼때는 2000 이상의 status를 보낸다.
+```json
+{  
+   "timestamp":"2019-01-14 11:23:17",
+   "status":2001,
+   "error":"NO_LOGIN",
+   "message":"아이디나 비밀번호가 일치하지 않습니다.",
+   "trace":"",
+   "path":"/api/v1/lotto2222222222222",
+
+}
+```   
+
 ## Contents 영역 정의
  서버에서 정의한 VO객체를 JSON 포멧으로 변환된 형태 <br>
  유지보수와 확장성, 에러율을 최소화 하기위해 VO객체는 메이븐에 배포화여 앱과 공유합니다.
@@ -141,7 +156,14 @@ contents는 결과에 대한 데이터(VO) 정보입니다. <br>
      }
    }
 ```
- 
+
+ - VO형태가 아닌 기본 자료형의 경우는 result 항목으로 표시
+ result에 boolean, inteager 등 기본 자료형 하나를 매핑한다. 
+ ```json
+ "contents" : {
+     "result" : true
+   }
+```
    
 ### Pagination
  갯수가 정해지지 않은 모든 리스트의 형태의 응답 객체는 다음 객체 형태를 사용합니다.
