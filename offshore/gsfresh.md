@@ -40,7 +40,7 @@ GS FRESH Project는 기존에 웹 App를 Flutter로 대체하는 project 입니�
 ---
 먼저 전체적인 시스템 구성에 대해 알아 봅니다. GS Fresh Project는 Clean Architecture의 구조로 설계 되었습니다. 
 
-![clean_architecture](https://github.com/muabe/Personal/blob/main/doc/Clean_Architecture.png)
+![clean_architecture](https://github.com/muabe/Minor-League/blob/master/offshore/image/Clean_Architecture.png)
 
 <br>
 
@@ -58,7 +58,7 @@ Clean Architecture는 Presentation, Domain, Data 3개의 계층으로 분리 되
 하지만 전체적인 구조를 이해하면 개발에 큰 도움이 주기 때문에  
 Architecture의 자세한 내용은 아래 추가로 기술하였으니 확인 바랍니다.  
 
-- [GS Fresh Mobile Software Architecture](https://m.gsfresh.com/)
+- [GS Fresh Mobile Software Architecture](https://github.com/muabe/Minor-League/blob/master/offshore/MobileSoftwareArchitectureDesign2022_1Q)
 
 <br>
 
@@ -68,7 +68,7 @@ Architecture의 자세한 내용은 아래 추가로 기술하였으니 확인 �
 
 <dl><dt>• Flutter로 개발된 Home 화면</dt></dl>
 
-|![home](https://github.com/muabe/Personal/blob/main/doc/home.png)|
+|![home](https://github.com/muabe/Minor-League/blob/master/offshore/image/home.png)|
 |---|
 
 <br>
@@ -87,7 +87,7 @@ Architecture의 자세한 내용은 아래 추가로 기술하였으니 확인 �
 앞으로 개발해야할 내용은 아래와 같이 <u>상단 메뉴</u>와 <u>사이드 메뉴</u>의 2depth 화면 입니다.
 <dl><dt>• WebView 상단 메뉴화면 예시</dt></dl>
 
-|![menu1](https://github.com/muabe/Personal/blob/main/doc/menu1.png)|![menu2](https://github.com/muabe/Personal/blob/main/doc/menu2.png)|![menu3](https://github.com/muabe/Personal/blob/main/doc/side.png)|
+|![menu1](https://github.com/muabe/Minor-League/blob/master/offshore/image/menu1.png)|![menu2](https://github.com/muabe/Minor-League/blob/master/offshore/image/menu2.png)|![menu3](https://github.com/muabe/Minor-League/blob/master/offshore/image/side.png)|
 |---|---|---|
 
 <br><br><br>
@@ -105,7 +105,7 @@ BLOC 패턴과 연관하여 업무 분담에 대해서는 아래 도식을 참�
 
 <br>
 
-![floder](https://github.com/muabe/Personal/blob/main/doc/support.png)
+![floder](https://github.com/muabe/Minor-League/blob/master/offshore/image/support.png)
 
 <br>
 
@@ -174,7 +174,7 @@ Presentation Layer의 UI 구현부는 Screens에서 시작합니다.
 
 <dl><dt>• intro screen 예시</dt></dl>
 
-![floder](https://github.com/muabe/Personal/blob/main/doc/screen_folder.png)
+![floder](https://github.com/muabe/Minor-League/blob/master/offshore/image/screen_folder.png)
 
 <br>
 
@@ -204,7 +204,7 @@ bloc 폴더는 bloc에 관련 파일들을 넣습니다.
 
 <dl><dt>• intro bloc 예시</dt></dl>
 
-![floder](https://github.com/muabe/Personal/blob/main/doc/bloc_folder.png)
+![floder](https://github.com/muabe/Minor-League/blob/master/offshore/image/bloc_folder.png)
 
 <br>
 
@@ -239,7 +239,7 @@ pages 폴더는 screen에서 사용되는 page들을 모아 놓은 폴더 입니
 
 <dl><dt>• main page 예시</dt></dl>
 
-![floder](https://github.com/muabe/Personal/blob/main/doc/page_folder.png)
+![floder](https://github.com/muabe/Minor-League/blob/master/offshore/image/page_folder.png)
 
 <br>
 
@@ -265,7 +265,7 @@ widgets폴더는 screen 내에 사용되는 widget들의 모음 입니다.
 
 <dl><dt>• main widgets 예시</dt></dl>
 
-![floder](https://github.com/muabe/Personal/blob/main/doc/widgets_folder.png)
+![floder](https://github.com/muabe/Minor-League/blob/master/offshore/image/widgets_folder.png)
 
 <br>
 
