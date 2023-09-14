@@ -48,19 +48,18 @@ API 호출 시 필요한 Header 정보입니다.
 ## Response HTTP Status Codes
 API 통신 결과에 따른 상태 코드는 다음과 같습니다.
 
-Code	Status
-200 OK
+Code	Status 200 OK
+정상/데이터 리턴 <br>
 
-정상/데이터 리턴
 400 Bad Request
+사용자 인증 필요 시 인증 안된 경우 <br>
 
-사용자 인증 필요 시 인증 안된 경우
 401 Unauthorized
+단말 호출 에러 <br>
 
-단말 호출 에러
 404 Not found
+리소스가 없는 경우 <br>
 
-리소스가 없는 경우
 500 Internal Server Error
 
 > 그외 업무상 오류 코드는 2000 이상 이며 Body 영역에서 따로 처리함
